@@ -1,0 +1,152 @@
+/* General App Styles */
+.App {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+}
+
+/* Login Page Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.login-box {
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h2 {
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0c85d0;
+}
+
+button:disabled {
+    background-color: #aab8c2;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #e0245e;
+    margin-bottom: 15px;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-form input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-form button {
+    width: auto;
+    padding: 10px 20px;
+}
+
+.results-container {
+    text-align: left;
+    background-color: #f5f8fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.results-summary {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e1e8ed;
+    padding-bottom: 15px;
+}
+
+.results-summary strong {
+    color: #1DA1F2;
+}
+
+.usernames-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.usernames-list li {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #e1e8ed;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+/* Loader Animation */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #1DA1F2;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin: 30px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
